@@ -14,7 +14,7 @@ export const TodoList = () => {
     }
 
   return (
-    <div>
+    <div className="m-5 d-flex justify-center flex-column">
         <h1>Todo-list</h1>
         <hr />
         <AddTodo onNewTodo = { onAddTodo }/>

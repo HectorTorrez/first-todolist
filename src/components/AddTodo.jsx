@@ -14,18 +14,20 @@ export const AddTodo = ({ onNewTodo }) => {
         onNewTodo(
             inputValue
         )
+        setInputValue('')
 
     }
 
   return (
-    <form onSubmit={ onSubmit }>
+    <form onSubmit={ onSubmit }  className='row'>
         <input
         type="text" 
         value={ inputValue }
         onChange={ onChanged }
         placeholder= 'Add Todo'
+        className="form-control col me-4"
         />
-        <button>Add Todo</button>
+        <button className="col-2 btn btn-primary">Add Todo</button>
     </form>
   )
 }
